@@ -1,0 +1,17 @@
+<h1>Periferico</h1>
+
+<p>
+  <b>Name</b><br>
+  <%= @periferico.name %>
+</p>
+
+<p>
+  <b>Asignado a</b><br>
+  <%= @periferico.asignado_a %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Volver', perifericos_path, :class => 'btn'  %>
+  <%= link_to 'Editar', edit_periferico_path(@periferico), :class => 'btn' %>
+  <%= link_to 'Eliminar', periferico_path(@periferico), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

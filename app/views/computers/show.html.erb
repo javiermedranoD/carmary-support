@@ -1,0 +1,57 @@
+<h1>Computer</h1>
+
+<p>
+  <b>Name</b><br>
+  <%= @computer.name %>
+</p>
+
+<p>
+  <b>Model</b><br>
+  <%= @computer.model %>
+</p>
+
+<p>
+  <b>So</b><br>
+  <%= @computer.so %>
+</p>
+
+<p>
+  <b>Processor</b><br>
+  <%= @computer.processor %>
+</p>
+
+<p>
+  <b>Memory</b><br>
+  <%= @computer.memory %>
+</p>
+
+<p>
+  <b>Hard disk</b><br>
+  <%= @computer.hard_disk %>
+</p>
+
+<p>
+  <b>Serial</b><br>
+  <%= @computer.serial %>
+</p>
+
+<p>
+  <b>Observaciones</b><br>
+  <%= @computer.observaciones %>
+</p>
+
+<p>
+  <b>Estado</b><br>
+  <%= @computer.estado %>
+</p>
+
+<p>
+  <b>Departamento</b><br>
+  <%= @computer.departamento %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Back', computers_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_computer_path(@computer), :class => 'btn' %>
+  <%= link_to 'Delete', computer_path(@computer), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

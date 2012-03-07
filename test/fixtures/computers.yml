@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  model: MyString
+  so: MyString
+  processor: MyString
+  memory: MyString
+  hard_disk: MyString
+  serial: MyString
+
+two:
+  name: MyString
+  model: MyString
+  so: MyString
+  processor: MyString
+  memory: MyString
+  hard_disk: MyString
+  serial: MyString

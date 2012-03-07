@@ -1,0 +1,24 @@
+<%= form_for @periferico, :html => { :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Periferico</legend>
+
+    <div class="control-group">
+      <%= f.label :name, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :name, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :asignado_a, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.collection_select :asignado_a, Computer.all, :id, :name %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit 'Registrar', :class => 'btn btn-primary' %>
+      <%= link_to 'Cancelar', perifericos_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>
