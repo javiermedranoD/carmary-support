@@ -61,14 +61,16 @@
     <div class="control-group">
       <%= f.label :estado, :class => 'control-label' %>
       <div class="controls">
-        <%= f.text_field :estado, :class => 'text_field' %>
+        <%= f.select :estado,options_for_select(["Seleccione un estado", "Activo", "Reparación", "Inactivo"],:disabled => ["Seleccione un estado"]), :class => '' %>
+
+
       </div>
     </div>
 
     <div class="control-group">
       <%= f.label :departamento, :class => 'control-label' %>
       <div class="controls">
-        <%= f.text_field :departamento, :class => 'text_field' %>
+        <%= f.select :departamento,options_for_select(["Seleccione un dpto", "Atención al Cliente", "Producción", "Gerencia"],:disabled => ["Seleccione un dpto"]), :class => 'text_area' %>
       </div>
     </div>
 
